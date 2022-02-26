@@ -29,4 +29,8 @@
        font-size: 1rem;
        margin: 0.8rem;
    }
+   .dropdown1 ul li{
+       margin-left: 2.1rem;
+       width: 100%;
+   }
 }

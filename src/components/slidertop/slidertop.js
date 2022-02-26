@@ -1,7 +1,7 @@
 import React,{useState,useref} from "react";
 import "./slidertop.css"
 const text = [
-              "It's taking us a bit longer than usual to get your order to you. Thank you for your patience",
+              `It's taking us a bit longer than usual to get your order to you.\n Thank you for your patience`,
                "HELLO NIKE APP Download the app to access everything Nike. Get Your Great",
                "FREE DELIVERY Applies to orders of ₹14,000 or more. View details",
                "SAVE UP TO 40%Shop All Our New Markdowns"

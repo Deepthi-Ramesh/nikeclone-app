@@ -87,4 +87,10 @@
          margin-top: 0.3rem;
          font-size: 1.3rem;
      }
+     .imgpart {
+         width: 42vh;
+     }
+     .locked-product {
+         display: none;
+     }
  }
