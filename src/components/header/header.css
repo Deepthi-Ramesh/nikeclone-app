@@ -1,0 +1,131 @@
+.Navbaritems{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ .nav-menu{
+     display: flex;
+     flex-direction: row;
+     list-style: none;
+     width: 35%;
+     margin-left: 9rem;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .nav-menu li{
+     color: black;
+     padding: 0.5rem;
+     padding-bottom: 1.7rem;
+ }
+.menu-icon{
+    display: none;
+}
+.search-bar{
+    width: 62%;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color:  rgb(241, 241, 241);
+}
+.search-bar input{
+    width: 70%;
+    border: none;
+    outline: none;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    font-weight: 500;
+    color: rgb(197, 195, 195);
+}
+.search-bar input::placeholder{
+    content: "";
+}
+.iconsandsearch{
+    display: flex;
+    flex-direction: row;
+    width: 22%;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-search{
+    display: none;
+}
+.logo{
+    margin-right: 4rem;
+}
+.nav-menu li:hover{
+    border-bottom: 2px solid black;
+}
+.header-hover{
+    width: 100%;
+    height: 40rem;
+    transition: 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem 6rem;
+}
+.header-hover li{
+    list-style: none;
+    margin: 1rem;
+    font-size: 1rem;
+}
+@media screen and (max-width:968px){
+    .Navbaritems{
+        position: relative;
+        justify-content: space-between;
+    }
+    .nav-menu{
+        flex-direction: column;
+        width: 75%;
+        height:auto;
+        position: absolute;
+        top:120px;
+        right: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-menu.active{
+        background-color: rgb(255, 255, 255);
+        left:0;
+        opacity: 1;
+        transition: all 0.5s ease ease-in-out;
+        z-index: 1;
+    }
+    .nav-menu li{
+        text-align: center;
+        width: 100%;
+        display: table;
+        cursor: pointer;
+    }
+    .menu-icon{
+        display: block ;
+
+    }
+    .search-bar{
+      display: none;
+    }
+    .heart{
+        display: none;
+    }
+    .mobile-search{
+        display: block;
+    }
+    .iconsandsearch{
+        margin-right: 1rem;
+        width:7rem;
+    }
+    .logo{
+        margin-left: 1.5rem;
+    }
+    .header-hover{
+        display: none;
+    }
+    .nav-menu li:hover{
+        border-bottom: 0;
+    }
+}
+   

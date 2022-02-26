@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  overflow-x:hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .main-container{
+  padding:  0 1.5rem;
+  margin-bottom: 3rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  position: sticky;
+}
+.Trending{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-bottom: 3rem;
+}
+.heading{
+  color: #111; 
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  float: left;
+  margin: 0.8rem 0 ;
+}
+.Trend-cards{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.more-nike{
+  display: flex;
+  flex-direction: column;
+}
+.more-nike-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.latest-and-greatest{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7rem;
+}
+.latest-and-greatest .head{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product-div{
+  width:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x:scroll;
+  margin-right: -3rem;
+  margin-top: 1rem;
+}
+.product-div::-webkit-scrollbar{
+  width: 1rem;
+}
+.product-div::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+  background-color:white;
 }
 
-.App-link {
-  color: #61dafb;
+.product-div::-webkit-scrollbar {
+  background-color: #F5F5F5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.product-div::-webkit-scrollbar-thumb {
+  border-radius: 0.6rem;
+  background-color: #555;
+  height: 10px;
+}
+.dropdown{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 1rem 0;
+}
+
+@media (min-width:911px){
+  .App .main-container{
+    padding:  0 3rem;
+ }
+ .Trend-cards{
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .more-nike-card{
+  display: flex;
+  flex-direction: row;
+}
+.dropdown{
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 3rem;
+  margin: 8rem auto 4rem auto;
+}
+.latest-and-greatest .head .button-div{
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0rem;
+}
+.latest-and-greatest .head .button-div button{
+  width: 42%;
+  height: 80%;
+  color: rgb(29, 28, 28);
+  font-size: 1.2rem;
+  font-weight: 200;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  padding: 0.7rem 0.4rem;
+}
+}
+@media (min-width:0px) and (max-width:598px) {
+  .latest-and-greatest .head .button-div button{
+      display: none;
+    }
+    .product-div::-webkit-scrollbar{
+       display: none;
+    }
+    .dropdown{
+      margin-top: 3rem;
+      margin-bottom: 0;
+    }
+}
+@media (min-width:599px) and (max-width:910px){
+  .latest-and-greatest .head .button-div button{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .product-div::-webkit-scrollbar{
+    display: none;
+ }
+ .dropdown{
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem;
+}
 }

@@ -1,0 +1,67 @@
+.card{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 0 3rem 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.head-div{
+    width: 100%;
+}
+
+.heading{
+   color: #111; 
+   font-size: 1.5rem;
+   line-height: 2rem;
+   font-weight: 400;
+   float: left;
+   margin: 0.8rem 0 ;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+.image img{
+    width: 100%;
+    height: 50%;
+}
+.btn{
+    padding:0.4rem 1.3rem;
+    color: white;
+    background-color: #111;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    border: 0.1px solid transparent;
+    cursor: pointer;
+}
+.main-heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.small-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.description{
+    margin: 0.5rem 0 0 0;
+}
+@media (min-width:675px) {
+    .card{
+        justify-content: center;
+        align-items: center;
+    }
+     .small-container{
+         justify-content: center;
+         align-items: center;
+     }
+     .head-div{
+        padding: 0 0.2rem;
+     }
+}

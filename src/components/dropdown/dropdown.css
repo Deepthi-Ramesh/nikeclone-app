@@ -1,0 +1,32 @@
+.dropdown1{
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+}
+.dropdown1 ul li{
+    list-style: none;
+    font-size: 0.9rem;
+    color: gray;
+    margin: 0.8rem 0;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.eachdown{
+    width: 30%;
+}
+.eachdown-para{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+.dropdown1 ul li:hover{
+    color: black;
+}
+@media (min-width:0px) and (max-width:598px){
+   .eachdown-para{
+       font-size: 1rem;
+       margin: 0.8rem;
+   }
+}

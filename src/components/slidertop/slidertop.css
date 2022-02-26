@@ -1,0 +1,25 @@
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: -1.5rem;
+  }
+  
+  .slide {
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    place-items: center;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1500ms;
+  }
+  @media screen and (max-width:968px){
+    .slide{
+      font-size: 0.9rem;
+    }
+  }
