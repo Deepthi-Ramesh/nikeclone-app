@@ -44,7 +44,7 @@
     border: none;
 }
 .gethelp-opt{
-    margin: 1rem 0 0 0;
+    margin: 0.5rem 0 0 0;
 }
 .gethelp-opt ul li{
     color: gray;
@@ -98,6 +98,14 @@
     width: 40%;
     margin: 1rem;
     position: absolute;
+}
+@keyframes anime{
+    from{
+        margin-top:2rem;
+    }
+    to{
+        margin-top:0.5rem;
+    }
 }
 @media (min-width:911px) {
     .main-footer{
@@ -179,6 +187,10 @@
     }.main-footer{
         margin-bottom: 2rem;
     }
+    .gethelp-opt{
+        animation-name: anime;
+        animation-duration: 1.2s;
+    }
 }
 @media (min-width:599px) and (max-width:910px){
     .options{
@@ -238,6 +250,8 @@
     }
     .gethelp-opt{
         margin: 0.5rem 0;
+        animation-name: anime;
+        animation-duration: 1.2s;
     }
     .gethelp-opt ul li{
         font-size: 0.75rem;

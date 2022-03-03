@@ -10,7 +10,7 @@
     color: gray;
     margin: 0.8rem 0;
     font-weight: 400;
-    transition: 0.2s ease-in-out;
+    transition: 1s ease-in-out;
     cursor: pointer;
 }
 .eachdown{
@@ -24,6 +24,14 @@
 .dropdown1 ul li:hover{
     color: black;
 }
+@keyframes anime{
+    from{
+        margin-top:4rem;
+    }
+    to{
+        margin-top:0rem;
+    }
+}
 @media (min-width:0px) and (max-width:598px){
    .eachdown-para{
        font-size: 1rem;
@@ -32,5 +40,10 @@
    .dropdown1 ul li{
        margin-left: 2.1rem;
        width: 100%;
+      
+   }
+   .dropdown1{
+    animation-name: anime;
+    animation-duration: 1.2s;
    }
 }

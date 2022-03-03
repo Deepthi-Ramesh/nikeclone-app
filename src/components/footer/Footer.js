@@ -41,7 +41,8 @@ import { guides } from "../../data";
                              {!matches ? (visible ? "-" : "+" ): null}
                          </button>
                         </div>
-                        {!matches ? ( <div className="gethelp-opt">{visible &&
+                        {!matches ? (visible &&
+                         <div className="gethelp-opt">
                              <ul>
                                  <li>Order Status</li>
                                  <li>Delivery</li>
@@ -51,7 +52,7 @@ import { guides } from "../../data";
                                  <li>Inquiries</li>
                                  <li>Contact Us On All other</li>
                              </ul>
-                          }</div>) : (<div className="gethelp-opt">
+                          </div>) : (<div className="gethelp-opt">
                             <ul>
                                 <li>Order Status</li>
                                 <li>Delivery</li>
@@ -70,14 +71,15 @@ import { guides } from "../../data";
                          {!matches ? (about ? "-" : "+" ): null}
                          </button>
                         </div>
-                        {!matches ? ( <div className="gethelp-opt">{about &&
+                        {!matches ? (about &&
+                         <div className="gethelp-opt">
                              <ul>
                                  <li>News</li>
                                  <li>Careers</li>
                                  <li>Investors</li>
                                  <li>Sustainability</li>
                              </ul>
-                          }</div>) : (<div className="gethelp-opt">
+                          </div>) : (<div className="gethelp-opt">
                             <ul>
                                  <li>News</li>
                                  <li>Careers</li>

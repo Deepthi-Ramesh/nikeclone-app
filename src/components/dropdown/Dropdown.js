@@ -18,13 +18,14 @@ function  Dropdown(props){
     return(
         <div className="eachdown">
             <p onClick={show} className="eachdown-para">{name}</p>
-            {!matches ? (<div className="dropdown1">{click &&
+            {!matches ? (click && (
+            <div className="dropdown1">
             <ul>
                 {data.map(item=>{
                     return <li>{item}</li>
                 })}
-                </ul>}
-            </div>):(<div className="dropdown1">
+                </ul>
+            </div>)):(<div className="dropdown1">
             <ul>
                 {data.map(item=>{
                     return <li>{item}</li>

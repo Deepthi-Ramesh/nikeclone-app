@@ -80,17 +80,17 @@
     }
     .nav-menu{
         flex-direction: column;
-        width: 75%;
+        width: 50%;
         height:auto;
         position: absolute;
-        top:120px;
+        top:110px;
         right: -100%;
         opacity: 1;
         transition: all 0.5s ease;
     }
     .nav-menu.active{
         background-color: rgb(255, 255, 255);
-        left:0;
+        left:20%;
         opacity: 1;
         transition: all 0.5s ease ease-in-out;
         z-index: 1;
@@ -122,10 +122,18 @@
         margin-left: 1.5rem;
     }
     .header-hover{
-        display: none;
+       display: none;
     }
     .nav-menu li:hover{
         border-bottom: 0;
     }
 }
    
+@media (min-width:560px) and (max-width:968px) {
+     .nav-menu.active{
+         left: 45%;
+     }
+     .nav-menu{
+         width: 40%;
+     }
+}

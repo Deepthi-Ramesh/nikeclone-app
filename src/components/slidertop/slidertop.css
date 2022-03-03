@@ -7,20 +7,23 @@
   
   .slide {
     display: inline-block;
-    padding: 1rem;
+    padding: 0.5rem;
     width: 100%;
     place-items: center;
     background-color: rgb(241, 241, 241);
     text-align: center;
     font-size: 0.9rem;
     white-space: pre-wrap;
+    height: fit-content;
+    margin: 0 auto;
   }
   .slideshowSlider {
     white-space: nowrap;
     transition: ease 1500ms;
   }
+  
   @media screen and (max-width:968px){
     .slide{
-      font-size: 0.6rem;
+      font-size: 0.7rem;
     }
   }

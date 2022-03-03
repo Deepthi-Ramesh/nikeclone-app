@@ -1,12 +1,11 @@
 import React,{useState,useref} from "react";
 import "./slidertop.css"
 const text = [
-              `It's taking us a bit longer than usual to get your order to you.\n Thank you for your patience`,
-               "HELLO NIKE APP Download the app to access everything Nike. Get Your Great",
-               "FREE DELIVERY Applies to orders of ₹14,000 or more. View details",
-               "SAVE UP TO 40%Shop All Our New Markdowns"
+              `It's taking us a bit longer than usual to get your order to you.\nThank you for your patience`,
+               `HELLO NIKE APP \n Download the app to access everything Nike. Get Your Great`,
+               "FREE DELIVERY \n Applies to orders of ₹14,000 or more. View details",
+               "SAVE UP TO 40% \nShop All Our New Markdowns"
             ];
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
 const delay = 2500;
 function Slidetop() {
   const [index, setIndex] = React.useState(0);
@@ -26,7 +25,7 @@ function Slidetop() {
       <div className="slideshowSlider"
        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
       {text.map((backgroundColor, index) => (
-          <div className="slide" key={index} >{backgroundColor}</div>
+          <div className="slide" key={index} ><p className="slide-para">{backgroundColor}</p></div>
         ))}
       </div>
     </div>

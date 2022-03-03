@@ -12,13 +12,32 @@ import './App.css';
 
 
  function App() {
+    // state = {
+    //   isTop: true,
+    // };
+  
+    // componentDidMount() {
+    //   document.addEventListener('scroll', () => {
+    //     const isTop = window.scrollY < 100;
+    //     if (isTop !== this.state.isTop) {
+    //         this.setState({ isTop })
+    //     }
+    //   });
+    // }
+    //   return (
+    //     <div style={{ height: '200vh' }}>
+    //       <h2 >Scroll {this.state.isTop ? 'down' : 'up'}!</h2>
+    //     </div>
+    //   );
+    // }
+  
+  
         var arrow1=">";
         var arrow2 ="<";
         const [matches, setMatches] = useState(
                 window.matchMedia("(min-width: 599px)").matches )
 
         useEffect(() => {
-          console.log(process.env.PUBLIC_URL);
           window
           .matchMedia("(min-width: 657px)")
           .addEventListener('change', e => setMatches( e.matches ));
@@ -39,7 +58,8 @@ import './App.css';
                   <Helpjoin/>
 
                 {/* main-header */}
-                  <header> <Header /> </header>
+                {/* style={{ position: 'fixed', top: 0 }} */}
+                  <header > <Header /> </header>
 
                 {/* topslider */}
                    <Slidetop />
@@ -79,6 +99,7 @@ import './App.css';
                                         btntext="white"
                                         btncontent="Shop"
                                         width={!trend ?"100%":"49.5%" }
+                                      
                                     />
                                   <Trending 
                                         image ={"./images/Trending2.jfif"} 

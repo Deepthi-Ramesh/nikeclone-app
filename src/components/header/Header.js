@@ -5,6 +5,7 @@ import { mens } from "../../data";
 function Header(){
     const [clicked,setclicked] =useState(false)
     const [locked, setLocked] = useState(false);
+    
     return(
         <div>
         <nav className="Navbaritems">

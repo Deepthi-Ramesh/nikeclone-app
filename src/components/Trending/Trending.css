@@ -1,5 +1,5 @@
 .trend-card{
-    height: 60vh;
+    height: 70vh;
     position: relative;
     margin-bottom: 1rem;
 }
@@ -25,6 +25,11 @@
 @media (min-width:911px) {
     .trend-card{
         margin-right:1rem;
+        height: 100vh;
+    }
+}
+@media (min-width:470px) and (max-width:911px) {
+    .trend-card{
         height: 100vh;
     }
 }
